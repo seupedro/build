@@ -138,7 +138,6 @@ config/boards/orangepizero3w.conf		@shkolnik
 config/boards/orangepizeroplus.csc		@schwar3kat
 config/boards/photonicat2.csc		@HackingGate
 config/boards/phytiumpi.csc		@chainsx
-config/boards/pinebook-a64.csc		@Qvy-png
 config/boards/pinebook-pro.csc		@ahoneybun
 config/boards/pocketbeagle2.conf		@Grippy98
 config/boards/pocketchip-sd.csc		@TheSnowfield
@@ -191,7 +190,7 @@ config/boards/sovol-sv08.csc		@lexfrei
 config/boards/sovol-zero.conf		@lexfrei
 config/boards/station-m1.csc		@150balbes
 config/boards/station-m3.csc		@chainsx
-config/boards/tanix-tx6s-axp313.tvb		@alnahian2011
+config/boards/tanix-tx6s-axp313.conf		@alnahian2011
 config/boards/thinkpad-x13s.conf		@PeterChrz @rpardini
 config/boards/tinkerboard.conf		@paolosabatino
 config/boards/tmds62levm.conf		@jonaswood01
@@ -252,7 +251,7 @@ config/kernel/linux-starfive2-*.config		@libiunc
 config/kernel/linux-sun55iw3-syterkit-*.config		@chainsx
 config/kernel/linux-sun60iw2-*.config		@shkolnik
 config/kernel/linux-sunxi-*.config		@1ubuntuuser @DylanHP @StephenGraf @TheSnowfield @igorpecovnik @leggewie @mhawkins-consultant
-config/kernel/linux-sunxi64-*.config		@JohnTheCoolingFan @Qvy-png @TallGuy74 @The-going @alexl83 @alnahian2011 @deece @devdotnetorg @igorpecovnik @juanesf @juliovendramini @lexfrei @pyavitz @schwar3kat @sicXnull
+config/kernel/linux-sunxi64-*.config		@JohnTheCoolingFan @TallGuy74 @The-going @alexl83 @alnahian2011 @deece @devdotnetorg @igorpecovnik @juanesf @juliovendramini @lexfrei @pyavitz @schwar3kat @sicXnull
 config/kernel/linux-thead-*.config		@chainsx
 config/kernel/linux-tq-imx8m-*.config		@schmiedelm
 config/kernel/linux-tq-imx93-*.config		@schmiedelm
@@ -281,7 +280,7 @@ patch/atf/atf-sm8550/		@FantasyGmm @Squishy123 @kasimling
 patch/atf/atf-sm8750/		@kasimling
 patch/atf/atf-spacemit-k3/		@pyavitz
 patch/atf/atf-spacemit/		@pyavitz @sven-ola
-patch/atf/atf-sunxi64/		@JohnTheCoolingFan @Qvy-png @TallGuy74 @The-going @alexl83 @alnahian2011 @deece @devdotnetorg @igorpecovnik @juanesf @juliovendramini @lexfrei @pyavitz @schwar3kat @sicXnull
+patch/atf/atf-sunxi64/		@JohnTheCoolingFan @TallGuy74 @The-going @alexl83 @alnahian2011 @deece @devdotnetorg @igorpecovnik @juanesf @juliovendramini @lexfrei @pyavitz @schwar3kat @sicXnull
 patch/atf/atf-uefidt/		@amazingfate
 patch/kernel/archive/cix-*/		@HeyMeco
 patch/kernel/archive/genio-*/		@HeyMeco
@@ -297,6 +296,7 @@ patch/kernel/archive/meson-s4t7-*/		@adeepn @leggewie @pyavitz @rpardini
 patch/kernel/archive/meson64-*/		@SteeManMI @adeepn @igorpecovnik @jomadeto @pyavitz @retro98boy @rpardini
 patch/kernel/archive/mvebu-*/		@leggewie
 patch/kernel/archive/mvebu64-*/		@igorpecovnik
+patch/kernel/archive/phytium-embedded-*/		@chainsx
 patch/kernel/archive/qcs6490-*/		@HeyMeco @SuperKali
 patch/kernel/archive/qrb2210-*/		@SuperKali @sdeleeuw
 patch/kernel/archive/realtek-rtd1619b-*/		@wei633
@@ -308,15 +308,14 @@ patch/kernel/archive/sm8550-*/		@FantasyGmm @Squishy123 @kasimling
 patch/kernel/archive/sm8750-*/		@kasimling
 patch/kernel/archive/sophgo-sg200x-*/		@lukaszsobala
 patch/kernel/archive/spacemit-*/		@pyavitz @sven-ola
-patch/kernel/archive/spacemit-k3-*/		@pyavitz
+patch/kernel/archive/spacemit-k3-6.18		@pyavitz archive/spacemit-k3-current-*/ archive/spacemit-k3-legacy-*/
 patch/kernel/archive/sun60iw2-opi-*/		@shkolnik
-patch/kernel/archive/sunxi-*/		@1ubuntuuser @DylanHP @JohnTheCoolingFan @Qvy-png @StephenGraf @TallGuy74 @The-going @TheSnowfield @alexl83 @alnahian2011 @deece @devdotnetorg @igorpecovnik @juanesf @juliovendramini @leggewie @lexfrei @mhawkins-consultant @pyavitz @schwar3kat @sicXnull
+patch/kernel/archive/sunxi-*/		@1ubuntuuser @DylanHP @JohnTheCoolingFan @StephenGraf @TallGuy74 @The-going @TheSnowfield @alexl83 @alnahian2011 @deece @devdotnetorg @igorpecovnik @juanesf @juliovendramini @leggewie @lexfrei @mhawkins-consultant @pyavitz @schwar3kat @sicXnull
 patch/kernel/archive/uefi-arm64-*/		@igorpecovnik @rpardini
 patch/kernel/archive/uefi-loong64-*/		@amazingfate
 patch/kernel/archive/uefi-x86-*/		@igorpecovnik @rpardini
 patch/kernel/archive/uefidt-*/		@amazingfate
 patch/kernel/nuvoton-ma35d1-*/		@TuAFBogey
-patch/kernel/phytium-embedded-*/		@chainsx
 patch/kernel/rk35xx-vendor-*/		@150balbes @CodeChenL @ColorfulRhino @HeyMeco @JohnTheCoolingFan @MarusGradinaru @Pillar1989 @SeeleVolleri @SuperKali @ZazaBR @alexl83 @amazingfate @andyshrk @chainsx @efectn @ginkage @hqnicolas @ifroncy01 @igorpecovnik @kamilsaigol @lanefu @linhz0hz @prahal @rpardini @schwar3kat @vamzii @vidplace7
 patch/kernel/rv1106-vendor-*/		@vidplace7
 patch/kernel/rv1126-vendor-*/		@hqnicolas
@@ -365,9 +364,9 @@ patch/u-boot/v2026.04/board_h96-tvbox-3566/		@hqnicolas
 patch/u-boot/v2026.04/board_helios64/		@iav @prahal
 patch/u-boot/v2026.07-imx6/		@igorpecovnik
 patch/u-boot/v2026.07-mvebu64/		@igorpecovnik
-patch/u-boot/v2026.07-sunxi-crust/		@Qvy-png @devdotnetorg @igorpecovnik @pyavitz @schwar3kat
+patch/u-boot/v2026.07-sunxi-crust/		@devdotnetorg @igorpecovnik @pyavitz @schwar3kat
 patch/u-boot/v2026.07-sunxi/		@1ubuntuuser @DylanHP @StephenGraf @TheSnowfield @igorpecovnik @leggewie @mhawkins-consultant
-patch/u-boot/v2026.07-sunxi64/		@JohnTheCoolingFan @Qvy-png @TallGuy74 @alexl83 @deece @devdotnetorg @igorpecovnik @juanesf @lexfrei @pyavitz @schwar3kat @sicXnull
+patch/u-boot/v2026.07-sunxi64/		@JohnTheCoolingFan @TallGuy74 @alexl83 @deece @devdotnetorg @igorpecovnik @juanesf @lexfrei @pyavitz @schwar3kat @sicXnull
 patch/u-boot/v2026.07/		@ColorfulRhino @Pillar1989 @Shadowrom2020 @amazingfate @brentr @crackerjacques @hqnicolas @ifroncy01 @igorpecovnik @rpardini @schwar3kat @utlark
 patch/u-boot/v2026.07/board_helios4/		@leggewie
 patch/u-boot/v2026.07/board_yy3568/		@hqnicolas
@@ -412,7 +411,7 @@ sources/families/sophgo-sg200x-riscv64.conf		@lukaszsobala
 sources/families/spacemit-k3.conf		@pyavitz
 sources/families/spacemit.conf		@pyavitz @sven-ola
 sources/families/starfive2.conf		@libiunc
-sources/families/sun50iw1.conf		@Qvy-png @devdotnetorg @igorpecovnik
+sources/families/sun50iw1.conf		@devdotnetorg @igorpecovnik
 sources/families/sun50iw2.conf		@igorpecovnik @schwar3kat
 sources/families/sun50iw6.conf		@igorpecovnik @pyavitz
 sources/families/sun50iw9-bpi.conf		@The-going @juliovendramini @pyavitz
